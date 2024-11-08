@@ -1,0 +1,24 @@
+1. Server - the server is computer which can have some local storage, cpu, RAM. which can ca be used to run the applications.
+2. cloud - cloud is set server and services which is pysically existed in the data centers.
+
+Azure can 200+ services 
+azure AI+ML services 
+azure compute services 
+azure data analytics services 
+azure database services 
+....etc
+
+
+Region -> can be the country [ex - india, us , europe ]
+zones -> a region can have multiple zones[ india centeral, india southindia ]
+
+availabilty, low latency, auto scaling, low down time
+
+IAAS -> Infrastucters as a Service
+ex - 
+ azure have vms,storage, networking, load balncers so - we using vms for running appliaction. so all the infrasture configuartion done by azure 
+
+PAAS -> platform as a service
+ex - azure can give the opuernity use the mysql directly from the azure platform. so it's PAAS
+
+SAAS -> microsoft has outlook software which used by private organizations, microsoft will charge from users, which means it's software selling in the market.
