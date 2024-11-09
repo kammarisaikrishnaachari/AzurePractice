@@ -1,0 +1,13 @@
+Azure Resource - resource is nothing but user request 
+
+Azure Resource manager -> resource manager will collect all the requests, and it will send as resource 
+
+Azure Resource Groups  -> As a DevOps engineer, you will work on different projects, so you will group particular project resources into a single group called a Resource Group. 
+
+Notes - ex - payments application can have multiple VMs and Database and networks groups and securities groups into a single resource group, can name it as Payments_resourceGroups
+
+by using, payments_resourceGroups can DevOps engineers -> track all resources, Access Controls [IAM], security groups[like NSG's, ASG's], and billing and ..etc
+
+ 
+
+
