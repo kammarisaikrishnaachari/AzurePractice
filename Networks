@@ -1,0 +1,49 @@
+AZURE Networks 
+
+VNET -> Vnet also called as Virtual Network, which is used used configuare the security, policies to the project.
+
+Use case ex-
+let's say we in org, can have different projects. which projects needs heavy security and another no need of that much security.
+so creating VNET for project which makes entire project secure and not secure
+
+ex- there is one acre land sorunded by compund wall can be called called as VNET of that land/ project
+
+one subcription can have multiple VNETS with projects
+
+VNET ---
+VNET can be consists of single/default/ multiple Subnets
+
+Subnet is like, one VNET three Applications like Presention layer, Application layer and DATA layer.
+
+from the outside using public IP address, users can not access Appliaction layer and DB layer so that case, we can three subnet for all three layers 
+
+Presention Subnet used to deploy the -> Presention layer, which can be exposed to the public IP address
+
+Appliaction Subnet used to deploy-> the apllication layer and can't be accessed from outside. only acceessed from presention layer [ this work can be done by using routeing table]
+
+
+Subent has CIDR range of IPDAREESS -> 
+IPV4 -> 65k Ipaddress 
+ocatat format 
+172.168.3.0/24  to 172.168.255.255/24 -> last bit if see 0 - 255 which 256 ipaddress can be provided 
+
+Firewall -> is used proteced the complete VNET
+firewall manger 
+firewall subnet [ Ipaddress range can be configured ]
+
+NSG -> network security group -> which attached to the subnet level or instance[one VM] 
+
+ASG -> in one subnet ex - apllication subnet, there are 5 applications. so 2 can be exposed , and 3 sholud not exposed - using ASG three can be grouped as ASG and provide saparate seciry rules.
+
+Bastion -> bastin is a azure service, used to conect the vm without public IPADDRESS [ using private address can be connected usin bastion service].
+
+practiccal scenario -> devops engineers will configuare NSG + ASG both for the business logics and DB 
+
+
+
+
+
+
+
+
+
