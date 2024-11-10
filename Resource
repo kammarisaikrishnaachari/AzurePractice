@@ -8,6 +8,6 @@ Notes - ex - payments application can have multiple VMs and Database and network
 
 by using, payments_resourceGroups can DevOps engineers -> track all resources, Access Controls [IAM], security groups[like NSG's, ASG's], and billing and ..etc
 
- 
+Real-lifescenario -> Resouce group name can be -> Resouce_Dev.    ResourceGroup_Prod
 
 
