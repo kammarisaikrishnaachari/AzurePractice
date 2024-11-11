@@ -1,0 +1,61 @@
+Azure Nginx server deployment on the VM along VNET and Firewall
+Using Bastion -> [use the same region across]
+1. create resouce group called as Demo_RG
+2. create Virtual network
+    choose the same resource group
+    choose the same region 
+    name it as Demo-VN
+ go to network settings ->
+ 1. there will be options like 
+    Virtual Encryption -> not used 
+    azure basition -> new create 
+     name it as Demo-bastion
+     create the bastion public IP address 
+2. create firewall ->
+    enable the firewall checkbox
+    ceate new firewall-policy
+    create firewall public IP 
+    choose the policy tier
+3. go to the IpAdrress tab 
+   configuare the CIDR ranges for subnets 
+    subnets are 
+     1. deafult subnet , we can used for application/ any server 
+     2. bastion subnet 
+     3. firewall public ip subnet 
+     4. firewall manager subnet 
+create the virtual network 
+
+3. create the Virtual Meachine insde the VNET along with the firwall
+  1. go to virtual meachines 
+    create the VM 
+    name it as Demo-VM
+    choose the same region
+    allow only SSH access
+    don't allow inbound rules 
+  2. go to network tab
+    choose the VM 
+    don't create public IP 
+    and create the VM 
+4. once the VM is created, go to connect -> bastion connect -> craete new new bastion IP address 
+   enter source Ip addresses and Destiona Ip will be Firewall IP 
+hit the connect button.
+
+Using Firewall policy wee can connect the browser.
+
+1. go to the firewall 
+2. go to firewall policy 
+ add DNAT plocy 
+ craete the collection 
+ craete the rule 
+  source will be client/users public ip address 
+  destination will be firewall Public IP 
+  destination port ex-8000
+  tralsation Ip will be VM private IP address 
+
+  translation port ex-  80
+craete the rule 
+
+now go to browser -> http://PublicIP of Firwall:destionport[8000]/ hit enter
+
+     
+ 
