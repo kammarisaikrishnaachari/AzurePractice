@@ -1,0 +1,25 @@
+Azure Storage services 
+
+first we need to have storage account,  to create or access or edit or delete
+ storage account can be defined to IAM/ RBAC roles 
+ we assign the roles to the users based on the requirement.
+
+Once storage account is created, we can n no of services available based on the requirement we can services 
+1. container blob storage  - aws [s3 buckets]
+   it's basically used large data files like videos/ images/ data sets 
+   sorce code as well like fornt end code 
+   static web sites code 
+   it can be accessed by the used using axure storage explorer
+2. file storage - aws [EFS]
+   this basically used for to staore data and sharing the data to the AKS pods 
+   so backup of the file storage also configure
+3. table 
+   table storage is used for unstructerd data 
+   ex - e-commerce website can have lot of tractions of users we use the table storage 
+   ex - dynamo DB
+4. queue storage 
+   messaging purpose 
+  if there is lot requets coming, then this queue storage can make sequential actions 
+
+5. storage account can host static web site. 
+    
