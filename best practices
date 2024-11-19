@@ -1,0 +1,21 @@
+Best practices for CD -----
+
+using kubernetes 
+
+Here’s how you can address these drawbacks to combine CI/CD and Kubernetes with confidence.
+
+7 Best Practices for CI/CD and Kubernetes:
+
+1. Use GitOps
+  The term GitOps refers to the practice of keeping your infrastructure configuration as files in your source control repository. Managing everything with Git ensures every essential resource is versioned. It also means you can reference any resource within your pipelines, so you can check the validity of your config and quickly identify any errors.
+
+Manually triggering pipelines from external systems is unreliable and error-prone. Using Git to run a pipeline each time you commit ensures changes can’t slip through to production unnoticed. If you need to revert a deployment, you can check out an older commit and replay the pipeline.
+
+
+
+2. Scan Your Container Images
+3. Use Helm to Manage Deployments
+4. Ensure There’s a Rollback Mechanism
+5. Use Immutable Image Tags
+6. Follow Kubernetes Security Best Practices
+7. Try Pull-Based CI/CD Workflows
